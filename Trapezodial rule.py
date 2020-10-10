@@ -26,9 +26,11 @@ def trapezoidal (x0, xn, n):
         i += 1
     
     # Finalize the trapezodial formula
-    return ((h / 2) * Total) 
+    return ((h / 2) * Total)
 
 print ("The total profit of the beverage company over nine-month" 
        "period is ","%.4f" % trapezoidal(x0, xn, n), 
-       "in thousand of dollars. ") 
+       "in thousand of dollars. ")
+
+print("this code is updated by Isiwara")
 

@@ -18,17 +18,17 @@ def trapezoidal (x0, xn, n):
     h = (xn - x0) / n
     
     # Compute sum of first and last terms to create formula
-    T = y[0] + y[n]
+    Total = y[0] + y[n]
     
     # Add middle terms to formula
     for i in range(1, n):
-        T += 2*y[i] 
+        Total += 2*y[i] 
         i += 1
     
     # Finalize the trapezodial formula
-    return ((h / 2) * T) 
+    return ((h / 2) * Total) 
 
-print ("The approximate total profit of the beverage company over nine-month" 
+print ("The total profit of the beverage company over nine-month" 
        "period is ","%.4f" % trapezoidal(x0, xn, n), 
        "in thousand of dollars. ") 
 
